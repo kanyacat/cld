@@ -10,9 +10,12 @@ a {
   text-decoration: none;
 }
 
-button:focus,
-a:focus {
+button:focus {
   outline: none;
+}
+
+a:focus {
+  outline: 2px solid #ff9900;
 }
 
 ul {
@@ -106,6 +109,8 @@ strong {
   font-weight: 600;
   font-size: 18px;
   line-height: 1;
+
+  color: #000;
 }
 
 /* Slider */
@@ -278,7 +283,7 @@ strong {
 
 /* how we work */
 .how-we-work {
-  margin-bottom: 100px;
+  margin-bottom: 117px;
 }
 
 .section-h2__how-we-work {
@@ -332,9 +337,6 @@ strong {
   margin-bottom: 15px;
 }
 
-.how-we-work-btns {
-}
-
 .how-we-work__btn-more-detailed {
   padding: 15px 38px;
   font-size: 16px;
@@ -351,4 +353,156 @@ strong {
   color: #000000;
 
   border: 1px solid #000000;
+}
+
+/* Questions */
+.questions {
+  margin-bottom: 100px;
+}
+
+.section-h2__questions {
+  margin-bottom: 35px;
+}
+
+.question__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px 0;
+
+  border-top: 1px solid #cacaca;
+}
+
+.questions__item:last-child {
+  border-bottom: 1px solid #cacaca;
+}
+
+.question__strong {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+
+  color: #000;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+}
+
+.footer__container {
+  padding: 49px 73px;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__left,
+.footer_center,
+.footer__right {
+  width: 33.3%;
+}
+
+.footer__logo {
+  margin-bottom: 15px;
+}
+
+.footer-nav__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+
+  color: #cacaca;
+}
+
+.footer__nav {
+  margin-bottom: 90px;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.footer__h2 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+
+  color: #cacaca;
+
+  margin-bottom: 23px;
+}
+
+.footer__form {
+  min-width: 570px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.form__item:nth-child(3) {
+  margin-bottom: 28px;
+}
+
+.form-item__input {
+  min-width: 570px;
+  min-height: 60px;
+
+  background: #414141;
+  border: none;
+  border-radius: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+
+  color: #cacaca;
+
+  padding: 0 24px;
+}
+
+.form-item__input-message {
+  padding-top: 14px;
+
+  min-height: 150px;
+  resize: none;
+}
+
+.btn-submit {
+  padding: 19px 52px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__right {
+  display: flex;
+  justify-content: right;
+
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.footer__text {
+  width: 60%;
+
+  font-size: 16px;
+  line-height: 32px;
+
+  color: #cacaca;
 }
