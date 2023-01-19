@@ -39,6 +39,11 @@ p {
   margin: 0;
 }
 
+input,
+textarea {
+  outline: none;
+}
+
 strong {
   display: block;
 }
@@ -583,6 +588,18 @@ strong {
   color: #cacaca;
 
   padding: 0 24px;
+}
+
+input[type="text"].form-item__input:hover,
+input[type="text"].form-item__input:focus,
+input[type="text"].form-item__input:active,
+input[type="email"].form-item__input:hover,
+input[type="email"].form-item__input:focus,
+input[type="email"].form-item__input:active,
+textarea[type="textarea"].form-item__input:hover,
+textarea[type="textarea"].form-item__input:focus,
+textarea[type="textarea"].form-item__input:active {
+  background: #666;
 }
 
 .form-item__input-message {
