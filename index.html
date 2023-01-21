@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Cld</title>
@@ -12,6 +15,11 @@
     <header class="header">
       <div class="container">
         <div class="header__content">
+          <div class="header-nav-burger">
+            <a href="">
+              <img src="/img/burger.svg" alt="" />
+            </a>
+          </div>
           <div class="header__logo">
             <img class="logo__img" src="/img/Logo.svg" alt="" />
           </div>
@@ -95,7 +103,7 @@
             проекта способствует повышению качества экспериментов.
           </p>
           <div class="about-us__card-list">
-            <div class="card__left">
+            <div class="about-us__card card__left">
               <div class="card-left__content">
                 <p class="card-left__text">
                   Принимая во внимание показатели успешности, перспективное
@@ -105,7 +113,7 @@
                 <button class="btn card__left-btn">Подробнее</button>
               </div>
             </div>
-            <div class="card__right">
+            <div class="about-us__card card__right">
               <div class="card-right__content">
                 <div class="card-right__item">
                   <span
@@ -143,7 +151,7 @@
         </div>
       </section>
       <section class="how-we-work">
-        <div class="container">
+        <div class="container how-we-work__container">
           <h2 class="section-h2 section-h2__how-we-work">Как мы работаем</h2>
 
           <ul class="how-we-work__list">
@@ -189,8 +197,8 @@
                 <button class="btn how-we-work__btn-contract">Договор</button>
               </div>
             </div>
-            <div class="how-we-work__img">
-              <img src="/img/how-we-work.png" alt="" />
+            <div class="how-we-work__img-block">
+              <img class="how-we-work__img" src="/img/how-we-work.png" alt="" />
             </div>
           </div>
         </div>

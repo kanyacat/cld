@@ -109,6 +109,10 @@ strong {
   padding: 7px 0;
 }
 
+.header-nav-burger {
+  display: none;
+}
+
 .header__nav {
   width: 58%;
 }
@@ -632,4 +636,170 @@ textarea[type="textarea"].form-item__input:active {
   line-height: 32px;
 
   color: #cacaca;
+}
+
+/* Media */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+  /* Header */
+
+  .header__content {
+    justify-content: space-between;
+  }
+
+  .header-nav-burger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header__nav {
+    width: 0;
+  }
+  /* Slider */
+  .slider {
+    margin-bottom: 32px;
+  }
+
+  .slider__content {
+    min-height: 667px;
+  }
+
+  .slider__info {
+    padding: 160px 77px;
+  }
+
+  .slider__info-h1 {
+    margin-bottom: 16px;
+
+    width: 100%;
+
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .slider__info-text {
+    margin-bottom: 60px;
+
+    width: 90%;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* About us */
+  .about-us {
+    margin-bottom: 40px;
+  }
+
+  .about-us__text {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  .about-us__card-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us__card {
+    margin-right: 0;
+    margin-bottom: 32px;
+
+    width: 100%;
+    min-height: 640px;
+    min-width: 924px;
+  }
+
+  .about-us__card-list {
+    align-items: flex-start;
+  }
+
+  .right-item__text {
+    width: 80%;
+  }
+
+  /* How we work */
+  .how-we-work {
+    margin-bottom: 85px;
+  }
+
+  .how-we-work__list {
+    margin-bottom: 50px;
+    width: 49%;
+  }
+
+  .how-we-work-paragraphs {
+    margin-bottom: 25px;
+  }
+
+  .how-we-work__text {
+    width: 90%;
+  }
+
+  .how-we-work__img {
+    max-width: 437px;
+    min-height: 689px;
+
+    object-fit: cover;
+    border-radius: 32px;
+  }
+
+  .card-right__background {
+    margin-left: 18px;
+  }
+
+  /* Questions */
+  .questions {
+    margin-bottom: 80px;
+  }
+
+  .section-h2__questions {
+    margin-bottom: 38px;
+  }
+
+  .question__strong {
+    width: 80%;
+
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .question__svg {
+    margin-right: 20px;
+    margin-top: 2px;
+  }
+  /* Footer */
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer__center {
+    width: 61%;
+  }
+
+  .footer__h2 {
+    margin-left: 14px;
+    margin-bottom: 20px;
+  }
+
+  .form-item__input {
+    min-width: 541px;
+  }
+
+  .form__item:nth-child(3) {
+    margin-bottom: 32px;
+  }
+
+  .footer__right {
+    display: none;
+  }
+
+  .btn-submit {
+    padding: 19px 38px;
+  }
 }
