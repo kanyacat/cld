@@ -1023,8 +1023,11 @@ textarea[type="textarea"].form-item__input:active {
 }
 
 @media (max-width: 320px) {
+  /* 320 */
   .container {
     padding: 0 15px;
+
+    max-width: 100%;
   }
 
   .section-h2 {
@@ -1100,6 +1103,14 @@ textarea[type="textarea"].form-item__input:active {
   }
 
   /* About */
+  .about-us {
+    margin-bottom: 25px;
+  }
+
+  .about-us__card-list {
+    padding-right: 0;
+  }
+
   .about-us__h2 {
     margin-bottom: 20px;
   }
@@ -1113,23 +1124,27 @@ textarea[type="textarea"].form-item__input:active {
   }
 
   .card__left {
-    margin-bottom: 29px;
-    padding-top: 74%;
+    margin-bottom: 31.5px;
+    padding-top: 72%;
     min-height: 0;
-    background-size: 100%;
     background-position: top;
-    border-radius: 16px;
+    background: url(/img/card2.png) no-repeat top transparent;
+    background-size: contain;
+
+    border-radius: 0;
   }
 
   .card-left__content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
     background: none;
     padding: 0;
   }
 
   .card-left__text {
+    margin-bottom: 12px;
     width: 100%;
 
     font-weight: 400;
@@ -1137,5 +1152,207 @@ textarea[type="textarea"].form-item__input:active {
     line-height: 28px;
 
     color: #000000;
+  }
+
+  .card__left-btn {
+    padding: 10px 42px;
+
+    font-size: 12px;
+    line-height: 15px;
+
+    text-align: center;
+
+    color: #ff9900;
+    border: 2px solid #ff9900;
+    border-radius: 8px;
+  }
+
+  .card-right__item {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    border: none;
+  }
+
+  .card-right__background {
+    min-width: 74px;
+    min-height: 59px;
+
+    margin-bottom: 2px;
+  }
+
+  .right-item__strong {
+    margin-bottom: 4px;
+
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .right-item__text {
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  /* How we work */
+  .how-we-work {
+    margin-bottom: 60px;
+  }
+
+  .how-we-work__container {
+    padding-right: 6px;
+  }
+
+  .section-h2__how-we-work {
+    margin-bottom: 20px;
+  }
+
+  .how-we-work__list {
+    margin-bottom: 16px;
+  }
+
+  .how-we-work__nav-link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .how-we-work__img-block {
+    margin-bottom: 10px;
+  }
+
+  .how-we-work__img {
+    min-height: 160px;
+    max-height: 160px;
+    max-width: 290px;
+
+    border-radius: 16px;
+  }
+
+  .how-we-work__strong {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .how-we-work-paragraphs {
+    margin-bottom: 80px;
+  }
+
+  .how-we-work__text {
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .how-we-work__btn-more-detailed {
+    margin-right: 5px;
+    padding: 12px 44px;
+
+    font-size: 12px;
+    line-height: 15px;
+
+    border-radius: 8px;
+  }
+
+  .how-we-work__btn-contract {
+    padding: 12px 32px;
+
+    font-size: 12px;
+    line-height: 15px;
+
+    border-radius: 8px;
+  }
+
+  /* Questions */
+  .questions {
+    margin-bottom: 63px;
+  }
+
+  .section-h2__questions {
+    margin-bottom: 18px;
+  }
+
+  .question__strong {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .question__svg {
+    width: 30px;
+    height: 30px;
+
+    margin-right: 0;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 33px 0;
+  }
+
+  .footer__center {
+    margin-bottom: -7px;
+  }
+
+  .footer__h2 {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .footer__form {
+    min-width: 290px;
+    align-items: flex-start;
+  }
+
+  .form-item__input {
+    padding: 0 20px;
+    min-width: 290px;
+
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  .form-item__input-message {
+    padding-top: 13px;
+  }
+
+  .form__item:nth-child(4) {
+    margin-bottom: 20px;
+  }
+
+  .btn-submit {
+    padding: 12px 28px;
+    margin-left: 55px;
+
+    font-size: 12px;
+    line-height: 15px;
+
+    border-radius: 8px;
+  }
+
+  .footer__left {
+    width: 60%;
+
+    margin: 0 auto;
+  }
+
+  .footer__logo {
+    margin-bottom: -7px;
+  }
+
+  .social__item-svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  .footer-social__item:not(:last-child) {
+    margin: 0 21.5px;
   }
 }
