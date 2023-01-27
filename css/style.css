@@ -822,10 +822,6 @@ textarea[type="textarea"].form-item__input:active {
     height: 48px;
   }
 
-  .slider__content {
-    max-width: 668px;
-  }
-
   .about-us__card-list {
     align-items: flex-start;
   }
@@ -880,11 +876,11 @@ textarea[type="textarea"].form-item__input:active {
   }
 
   .slider__content {
-    min-height: 662px;
+    min-height: 100%;
   }
 
   .slider__info {
-    padding: 160px 40px;
+    padding: 50px 30px;
   }
 
   .slider__info-h1 {
@@ -1022,7 +1018,7 @@ textarea[type="textarea"].form-item__input:active {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 600px) {
   /* 320 */
   .container {
     padding: 0 15px;
@@ -1239,7 +1235,7 @@ textarea[type="textarea"].form-item__input:active {
   }
 
   .how-we-work-paragraphs {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
 
   .how-we-work__text {
@@ -1313,7 +1309,7 @@ textarea[type="textarea"].form-item__input:active {
 
   .form-item__input {
     padding: 0 20px;
-    min-width: 290px;
+    min-width: 350px;
 
     font-size: 14px;
     line-height: 32px;
@@ -1354,5 +1350,11 @@ textarea[type="textarea"].form-item__input:active {
 
   .footer-social__item:not(:last-child) {
     margin: 0 21.5px;
+  }
+}
+
+@media (max-width: 365px) {
+  .form-item__input {
+    min-width: 290px;
   }
 }
