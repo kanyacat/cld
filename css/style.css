@@ -231,7 +231,7 @@ strong {
   flex-direction: column;
   justify-content: flex-end;
 
-  background: url(/img/card.jpg) center center no-repeat transparent;
+  background: url(/img/card1.png) center center no-repeat transparent;
   background-size: cover;
   border-radius: 32px;
 
@@ -1124,10 +1124,9 @@ textarea[type="textarea"].form-item__input:active {
     padding-top: 72%;
     min-height: 0;
     background-position: top;
-    background: url(/img/card2.png) no-repeat top transparent;
     background-size: contain;
 
-    border-radius: 0;
+    border-radius: 16px;
   }
 
   .card-left__content {
@@ -1161,6 +1160,16 @@ textarea[type="textarea"].form-item__input:active {
     color: #ff9900;
     border: 2px solid #ff9900;
     border-radius: 8px;
+  }
+
+  .card__left-btn:hover,
+  .card__left-btn:focus {
+    color: #fff;
+  }
+
+  .card__left-btn:active {
+    color: #fff;
+    border: 2px solid #e1670e;
   }
 
   .card-right__item {
@@ -1335,12 +1344,10 @@ textarea[type="textarea"].form-item__input:active {
 
   .footer__left {
     width: 60%;
-
-    margin: 0 auto;
   }
 
   .footer__logo {
-    margin-bottom: -7px;
+    margin-bottom: 10px;
   }
 
   .social__item-svg {
@@ -1356,5 +1363,13 @@ textarea[type="textarea"].form-item__input:active {
 @media (max-width: 365px) {
   .form-item__input {
     min-width: 290px;
+  }
+
+  .footer__logo {
+    margin-bottom: -7px;
+  }
+
+  .footer__left {
+    margin: 0 auto;
   }
 }
