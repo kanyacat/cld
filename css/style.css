@@ -352,12 +352,18 @@ strong {
 
   width: 26%;
 
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .how-we-work__nav-link {
   font-size: 18px;
   line-height: 22px;
+
+  color: #000;
+}
+
+.how-we-work__nav-link-active {
+  color: #ff9900;
 }
 
 .how-we-work__nav-link:hover {
@@ -370,9 +376,13 @@ strong {
 }
 
 .how-we-work__info {
+  display: none;
+}
+
+.how-we-work-info-active {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .info__slider-content {
@@ -740,7 +750,7 @@ textarea[type="textarea"].form-item__input:active {
   }
 
   .how-we-work__text {
-    width: 90%;
+    width: 100%;
   }
 
   .how-we-work__img {
