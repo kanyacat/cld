@@ -7,6 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Cld</title>
@@ -70,9 +74,11 @@
         </div>
       </div>
     </header>
+
     <main class="main">
       <section class="slider">
-        <div class="container">
+        <div class="container slider-container">
+          <!-- Slider main container -->
           <div class="slider__content">
             <div class="slider__info">
               <h1 class="slider__info-h1">Проектные решения любой сложности</h1>
@@ -83,8 +89,21 @@
               <button class="btn slider__info-btn">Заказать расчёт</button>
             </div>
           </div>
+
+          <div class="swiper slider__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide slider__slide slider__slide_img1"></div>
+              <div class="swiper-slide slider__slide slider__slide_img2"></div>
+              <div class="swiper-slide slider__slide slider__slide_img3"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
+
       <section class="about-us">
         <div class="container">
           <h2 class="section-h2 about-us__h2">О нас</h2>
@@ -579,6 +598,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
     <script src="/js/tabs.js"></script>
   </body>
 </html>
