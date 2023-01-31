@@ -9,6 +9,8 @@ body {
 a {
   text-decoration: none;
   padding: 3px;
+
+  transition: color 0.2s ease;
 }
 
 button:focus {
@@ -35,6 +37,7 @@ html {
 
 h1,
 h2,
+h3,
 p {
   margin: 0;
 }
@@ -70,6 +73,8 @@ strong {
 
   cursor: pointer;
   pointer-events: auto;
+
+  transition: background 0.2s ease;
 }
 
 .btn:hover {
@@ -523,8 +528,10 @@ strong {
   border-top: 1px solid #cacaca;
   border-bottom: 1px solid #cacaca;
 
-  margin-top: -2px;
+  margin-top: -1px;
   position: relative;
+
+  color: #000;
 }
 
 .question__link:hover,
@@ -551,8 +558,31 @@ strong {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+}
 
-  color: #000;
+.question__text {
+  margin-bottom: 32px;
+
+  font-size: 16px;
+  line-height: 32px;
+
+  color: #000000;
+}
+
+.question__svg {
+  margin-right: 20px;
+  margin-top: 2px;
+
+  transition: transform 0.2s ease;
+}
+
+.ui-accordion-header.ui-corner-top.ui-state-default.ui-accordion-icons.ui-accordion-header-active.ui-state-active
+  .question__svg {
+  transform: rotate(45deg);
+}
+.ui-accordion-header.ui-corner-top.ui-state-default.ui-accordion-icons.ui-accordion-header-active.ui-state-active
+  .question__link {
+  border-bottom: none;
 }
 
 /* Footer */
@@ -604,6 +634,10 @@ strong {
 .footer__social {
   display: flex;
   align-items: center;
+}
+
+.footer-social__item {
+  transition: fill 0.2s ease;
 }
 
 .footer-social__item:not(:last-child) {
@@ -857,10 +891,6 @@ textarea[type="textarea"].form-item__input:active {
     line-height: 32px;
   }
 
-  .question__svg {
-    margin-right: 20px;
-    margin-top: 2px;
-  }
   /* Footer */
   .footer {
     padding: 50px 0;
@@ -1375,6 +1405,11 @@ textarea[type="textarea"].form-item__input:active {
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
+  }
+
+  .question__text {
+    margin-bottom: 10px;
+    font-size: 14px;
   }
 
   .question__svg {
