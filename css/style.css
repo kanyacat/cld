@@ -119,9 +119,6 @@ strong {
   padding: 7px 0;
 }
 
-.header-nav-burger {
-}
-
 .header__nav {
   width: 58%;
 }
@@ -156,7 +153,7 @@ strong {
 
 .header__search-icon {
   padding-bottom: 1px;
-  padding-top: 10px;
+  padding-top: 13px;
 }
 
 .header__search:hover .header__search-icon path {
@@ -212,7 +209,7 @@ strong {
   z-index: 5;
 
   width: 30px;
-  padding: 10px 0;
+  padding: 14px;
 
   font-size: 0;
   color: black;
@@ -224,7 +221,7 @@ strong {
 }
 
 .nav-toggle:focus {
-  outline: 0;
+  outline: 2px solid #ff9900;
 }
 
 .nav-toggle__item {
@@ -248,14 +245,28 @@ strong {
   background: none;
 }
 
+.nav-toggle.active:focus {
+  outline: none;
+}
+
 .nav-toggle.active .nav-toggle__item::before {
   transform-origin: left top;
   transform: rotate(45deg) translate3d(0px, -2px, 0);
+  background: #000;
 }
 
 .nav-toggle.active .nav-toggle__item::after {
   transform-origin: left bottom;
   transform: rotate(-45deg) translate3d(0px, 3px, 0);
+  background: #000;
+}
+
+.nav-toggle.active:focus .nav-toggle__item::after {
+  background: #e1670e;
+}
+
+.nav-toggle.active:focus .nav-toggle__item::before {
+  background: #e1670e;
 }
 
 .nav-toggle__item::before,
@@ -348,6 +359,14 @@ strong {
   border-radius: 50%;
   border: none;
   background-color: rgba(255, 255, 255, 1);
+}
+
+.btn_round:hover {
+  opacity: 0.3;
+}
+
+.btn_round:focus {
+  opacity: 0.5;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
