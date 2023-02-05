@@ -43,11 +43,15 @@
       <div class="container">
         <div class="header__content">
           <button tabindex="1" class="nav-toggle" id="nav_toggle" type="button">
-            <span class="nav-toggle__item">Menu</span>
+            <span class="nav-toggle__item">Меню</span>
           </button>
 
           <div class="header__logo">
-            <img class="logo__img" src="/img/Logo.svg" alt="" />
+            <img
+              class="logo__img"
+              src="/img/Logo.svg"
+              alt="Логотип Евклид проектные системы"
+            />
           </div>
           <div class="header__nav">
             <nav class="nav">
@@ -142,8 +146,8 @@
             отталкиваться от того, что высококачественный прототип будущего
             проекта способствует повышению качества экспериментов.
           </p>
-          <div class="about-us__card-list">
-            <div class="about-us__card card__left">
+          <div class="about-us__card-list" aria-label="Список из трех карточек">
+            <div class="about-us__card card__left" aria-label="Карточка один">
               <div class="card-left__content">
                 <p class="card-left__text">
                   Принимая во внимание показатели успешности, перспективное
@@ -155,7 +159,7 @@
             </div>
             <div class="about-us__card card__right">
               <div class="card-right__content">
-                <div class="card-right__item">
+                <div class="card-right__item" aria-label="Карточка два">
                   <span
                     class="card-right__background card-right__background-top-card"
                   ></span>
@@ -170,7 +174,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-right__item">
+                <div class="card-right__item" aria-label="Карточка три">
                   <span
                     class="card-right__background card-right__background-bottom-card"
                   ></span>
@@ -193,32 +197,33 @@
       <section class="how-we-work">
         <div class="container how-we-work__container">
           <h2 class="section-h2 section-h2__how-we-work">Как мы работаем</h2>
-
-          <ul class="how-we-work__list">
-            <li class="how-we-work__item">
-              <a
-                class="how-we-work__nav-link how-we-work__nav-link-active"
-                data-path="one"
-                href="##"
-                >1 шаг</a
-              >
-            </li>
-            <li class="how-we-work__item">
-              <a class="how-we-work__nav-link" data-path="two" href="##"
-                >2 шаг</a
-              >
-            </li>
-            <li class="how-we-work__item">
-              <a class="how-we-work__nav-link" data-path="three" href="##"
-                >3 шаг</a
-              >
-            </li>
-            <li class="how-we-work__item">
-              <a class="how-we-work__nav-link" data-path="four" href="##"
-                >4 шаг</a
-              >
-            </li>
-          </ul>
+          <nav class="how-we-work__nav">
+            <ul class="how-we-work__list">
+              <li class="how-we-work__item">
+                <a
+                  class="how-we-work__nav-link how-we-work__nav-link-active"
+                  data-path="one"
+                  href="##"
+                  >1 шаг</a
+                >
+              </li>
+              <li class="how-we-work__item">
+                <a class="how-we-work__nav-link" data-path="two" href="##"
+                  >2 шаг</a
+                >
+              </li>
+              <li class="how-we-work__item">
+                <a class="how-we-work__nav-link" data-path="three" href="##"
+                  >3 шаг</a
+                >
+              </li>
+              <li class="how-we-work__item">
+                <a class="how-we-work__nav-link" data-path="four" href="##"
+                  >4 шаг</a
+                >
+              </li>
+            </ul>
+          </nav>
           <div
             class="how-we-work__info how-we-work-info-active"
             data-target="one"
@@ -640,7 +645,11 @@
         <div class="footer__content">
           <div class="footer__left">
             <div class="footer__logo">
-              <img class="footer-logo__img" src="/img/Logo2.svg" alt="" />
+              <img
+                class="footer-logo__img"
+                src="/img/Logo2.svg"
+                alt="Логотип Евклид проектные системы"
+              />
             </div>
             <div class="footer__nav">
               <ul class="footer-nav__list">
@@ -669,7 +678,11 @@
             </div>
             <div class="footer__social">
               <div class="footer-social__item">
-                <a class="social__item-link" href="">
+                <a
+                  class="social__item-link"
+                  href=""
+                  aria-label="Страничка в социальной сети Одноклассники"
+                >
                   <svg
                     class="social__item-svg"
                     width="60"
@@ -692,7 +705,11 @@
                 </a>
               </div>
               <div class="footer-social__item">
-                <a class="social__item-link" href="">
+                <a
+                  class="social__item-link"
+                  href=""
+                  aria-label="Страничка в социальной сети Вконтакте"
+                >
                   <svg
                     class="social__item-svg"
                     width="60"

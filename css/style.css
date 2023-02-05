@@ -169,7 +169,6 @@ strong {
   position: absolute;
   z-index: 5;
 
-  display: block;
   background: #ffffff;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 32px 32px;
@@ -182,8 +181,17 @@ strong {
   transform: none;
 }
 
+/* .header__burger.active.transform {
+  transform: none;
+} */
+
 .burger-nav {
   margin-top: 158px;
+  display: none;
+}
+
+.burger-nav.active {
+  display: block;
 }
 
 .burger-nav__list {
@@ -719,6 +727,10 @@ strong {
 .ui-accordion-header.ui-corner-top.ui-state-default.ui-accordion-icons.ui-accordion-header-active.ui-state-active
   .question__link {
   border-bottom: none;
+}
+
+.ui-accordion-header.ui-corner-top.ui-accordion-header-collapsed.ui-corner-all.ui-state-default.ui-accordion-icons {
+  outline: none;
 }
 
 /* Footer */
