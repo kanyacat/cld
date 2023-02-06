@@ -158,10 +158,14 @@ strong {
 
 .header__search:hover .header__search-icon path {
   stroke: #ff9900;
+
+  transition: stroke 0.2s ease;
 }
 
 .header__search:hover .header__search-icon rect {
   fill: #ff9900;
+
+  transition: fill 0.2s ease;
 }
 
 /* Burger */
@@ -228,6 +232,18 @@ strong {
   display: none;
 }
 
+.nav-toggle:hover .nav-toggle__item {
+  background: #ff9900;
+}
+
+.nav-toggle:hover .nav-toggle__item::before {
+  background: #ff9900;
+}
+
+.nav-toggle:hover .nav-toggle__item::after {
+  background: #ff9900;
+}
+
 .nav-toggle:focus {
   outline: 2px solid #ff9900;
 }
@@ -246,7 +262,7 @@ strong {
   bottom: 0;
   margin: auto;
 
-  transition: background 0.2s linear;
+  transition: background 0.3s ease;
 }
 
 .nav-toggle.active .nav-toggle__item {
@@ -289,7 +305,9 @@ strong {
   position: absolute;
   z-index: 1;
 
-  transition: transform 0.2s linear;
+  transition-property: transform, background;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .nav-toggle__item::before {
@@ -367,6 +385,8 @@ strong {
   border-radius: 50%;
   border: none;
   background-color: rgba(255, 255, 255, 1);
+
+  transition: opacity 0.2s ease;
 }
 
 .btn_round:hover {
@@ -678,6 +698,11 @@ strong {
   color: #000;
 }
 
+.question__svg ellipse,
+.question__svg path {
+  transition: fill 0.2s ease;
+}
+
 .question__link:hover,
 .question__link:focus {
   z-index: 2;
@@ -694,10 +719,17 @@ strong {
   fill: #ff9900;
 }
 
+.question__link:focus .question__svg ellipse {
+  fill: #ff9900;
+}
+
 .question__link:hover .question__svg path {
   fill: #fff;
 }
 
+.question__link:focus .question__svg path {
+  fill: #fff;
+}
 .question__strong {
   font-weight: 700;
   font-size: 24px;
@@ -784,7 +816,7 @@ strong {
   align-items: center;
 }
 
-.footer-social__item {
+.footer-social__item path {
   transition: fill 0.2s ease;
 }
 
@@ -851,6 +883,8 @@ strong {
   color: #cacaca;
 
   padding: 0 24px;
+
+  transition: background 0.2s ease;
 }
 
 input[type="text"].form-item__input:hover,
