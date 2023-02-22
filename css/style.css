@@ -97,14 +97,16 @@ strong {
 
 /* Header */
 .header {
-  position: relative;
+  position: fixed;
 
-  margin-bottom: 50px;
+  width: 100%;
+  min-height: 95px;
 
+  background-color: #fff;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 32px 32px;
 
-  min-height: 95px;
+  z-index: 100;
 }
 
 .header__content {
@@ -116,6 +118,7 @@ strong {
 .header__logo {
   position: relative;
 
+  cursor: pointer;
   padding: 7px 0;
 }
 
@@ -145,7 +148,8 @@ strong {
   border-bottom: 2px solid #ff9900;
 }
 
-.nav__link:active {
+.nav__link:active,
+.nav__link.active {
   outline: none;
   color: #e1670e;
   border-bottom: 2px solid #e1670e;
@@ -321,6 +325,7 @@ strong {
 /* Slider */
 
 .slider {
+  padding-top: 150px;
   margin-bottom: 50px;
 }
 
@@ -1158,7 +1163,6 @@ textarea[type="textarea"].form-item__input:active {
   /* Header */
   .header {
     min-height: 69px;
-    margin-bottom: 40px;
   }
 
   .header__logo {
@@ -1172,6 +1176,7 @@ textarea[type="textarea"].form-item__input:active {
 
   /* Slider */
   .slider {
+    padding-top: 120px;
     margin-bottom: 35px;
   }
 
@@ -1335,10 +1340,6 @@ textarea[type="textarea"].form-item__input:active {
   }
 
   /* Header */
-  .header {
-    margin-bottom: 30px;
-  }
-
   .header__logo {
     width: 47%;
     padding: 17px 0;
@@ -1355,6 +1356,7 @@ textarea[type="textarea"].form-item__input:active {
 
   /* Slider */
   .slider {
+    padding-top: 80px;
     margin-bottom: 60px;
   }
 

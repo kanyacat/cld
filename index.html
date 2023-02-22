@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,19 +22,44 @@
           <div class="container">
             <ul class="burger-nav__list">
               <li class="burger-nav__item">
-                <a class="nav__link burger-nav__link" href="">О нас</a>
+                <a
+                  class="nav__link burger-nav__link"
+                  href=""
+                  data-scroll="#about-us"
+                  >О нас</a
+                >
               </li>
               <li class="burger-nav__item">
-                <a class="nav__link burger-nav__link" href="">Проекты</a>
+                <a
+                  class="nav__link burger-nav__link"
+                  href=""
+                  data-scroll="#projects"
+                  >Проекты</a
+                >
               </li>
               <li class="burger-nav__item">
-                <a class="nav__link burger-nav__link" href="">Этапы</a>
+                <a
+                  class="nav__link burger-nav__link"
+                  href=""
+                  data-scroll="#how-we-work"
+                  >Этапы</a
+                >
               </li>
               <li class="burger-nav__item">
-                <a class="nav__link burger-nav__link" href="">Отзывы</a>
+                <a
+                  class="nav__link burger-nav__link"
+                  href=""
+                  data-scroll="#questions"
+                  >Вопросы</a
+                >
               </li>
               <li class="burger-nav__item">
-                <a class="nav__link burger-nav__link" href="">Контакты</a>
+                <a
+                  class="nav__link burger-nav__link"
+                  href=""
+                  data-scroll="#footer"
+                  >Контакты</a
+                >
               </li>
             </ul>
           </div>
@@ -46,7 +71,7 @@
             <span class="nav-toggle__item">Меню</span>
           </button>
 
-          <div class="header__logo">
+          <div class="header__logo" data-scroll="#slider">
             <img
               class="logo__img"
               src="/img/Logo.svg"
@@ -57,19 +82,27 @@
             <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a class="nav__link" href="">О нас</a>
+                  <a class="nav__link" href="" data-scroll="#about-us">О нас</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="">Проекты</a>
+                  <a class="nav__link" href="" data-scroll="#projects"
+                    >Проекты</a
+                  >
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="">Этапы</a>
+                  <a class="nav__link" href="" data-scroll="#how-we-work"
+                    >Этапы</a
+                  >
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="">Отзывы</a>
+                  <a class="nav__link" href="" data-scroll="#questions"
+                    >Вопросы</a
+                  >
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="">Контакты</a>
+                  <a class="nav__link" href="" data-scroll="#footer"
+                    >Контакты</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -101,7 +134,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="slider">
+      <section class="slider" id="slider">
         <div class="container slider-container">
           <!-- Slider main container -->
           <div class="slider__content">
@@ -129,7 +162,7 @@
         </div>
       </section>
 
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <div class="container">
           <h2 class="section-h2 about-us__h2">О нас</h2>
           <p class="about-us__text">
@@ -146,7 +179,11 @@
             отталкиваться от того, что высококачественный прототип будущего
             проекта способствует повышению качества экспериментов.
           </p>
-          <div class="about-us__card-list" aria-label="Список из трех карточек">
+          <div
+            class="about-us__card-list"
+            aria-label="Список из трех карточек"
+            id="projects"
+          >
             <div class="about-us__card card__left" aria-label="Карточка один">
               <div class="card-left__content">
                 <p class="card-left__text">
@@ -194,7 +231,7 @@
           </div>
         </div>
       </section>
-      <section class="how-we-work">
+      <section class="how-we-work" id="how-we-work">
         <div class="container how-we-work__container">
           <h2 class="section-h2 section-h2__how-we-work">Как мы работаем</h2>
           <nav class="how-we-work__nav">
@@ -368,7 +405,7 @@
           </div>
         </div>
       </section>
-      <section class="questions">
+      <section class="questions" id="questions">
         <div class="container">
           <h2 class="section-h2 section-h2__questions">
             Часто задаваемые вопросы
@@ -640,7 +677,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container footer__container">
         <div class="footer__content">
           <div class="footer__left">
@@ -783,5 +820,6 @@
     <script src="/js/swiper.js"></script>
     <script src="/js/tabs.js"></script>
     <script src="/js/burger.js"></script>
+    <script src="/js/scroll.js"></script>
   </body>
 </html>
