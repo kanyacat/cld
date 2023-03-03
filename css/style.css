@@ -189,16 +189,8 @@ strong {
   transform: none;
 }
 
-/* .header__burger.active.transform {
-  transform: none;
-} */
-
 .burger-nav {
   margin-top: 158px;
-  display: none;
-}
-
-.burger-nav.active {
   display: block;
 }
 
